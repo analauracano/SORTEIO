@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sorteio-Random</title>
+</head>
+<body>
+    <!-- Container do vídeo de fundo -->
+    <div class="video-background">
+        <video autoplay loop muted>
+            <source src="sorteio.mp4" type="video/mp4">
+            Seu navegador não suporta o formato de vídeo.
+        </video>
+    </div>
+
+    <!-- Título -->
+    <h2>Sortear um Número</h2>
+
+    <!-- Inputs de número -->
+    <div class="inputs-container">
+        <input placeholder="Entre" class="input-min" type="number">
+        <input placeholder="E" class="input-max" type="number">
+    </div>
+
+    <!-- Botão para sortear -->
+    <button onclick="generateNumber()">Sortear</button>
+
+    <div id="result"></div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
